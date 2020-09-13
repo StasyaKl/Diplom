@@ -29,18 +29,29 @@ $(document).ready(() => {
         midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
     });
 
-    $(".owl-carousel").owlCarousel();
-
-    $('.loop').owlCarousel({
+    $(".owl-carousel").owlCarousel({
         center: true,
-        items:2,
-        loop:true,
-        margin:10,
+        loop: true,
+        responsiveClass:true,
         responsive:{
-            600:{
-                items:4
+            0:{
+                items:1
+            },
+            580:{
+                items: 2
+            },
+            1023:{
+                items: 3
+
             }
         }
+    });
+
+    $('.loop').owlCarousel({
+        nav: true,
+        navText : ["",""],
+        dots: true,
+        margin:10,
     });
 
     $('.category').click((e) => {
@@ -57,8 +68,24 @@ $(document).ready(() => {
         this.style.display = "none";
     }
 
-    $("#footer-block-hide .footer-title").click(() => {
-        $("#footer-block-hide .footer-block-hide").show();
+    $(".footer-title.first").click(() => {
+        $(".footer-block-hide.first").show();
+    });
+    $(".footer-title.second").click(() => {
+        $(".footer-block-hide.second").show();
+    });
+    $(".footer-title.third").click(() => {
+        $(".footer-block-hide.third").show();
+    });
+    $('.footer-block-hide > svg').click ( () => {
+        $('#footer-block-hide .footer-block-hide').hide();
+    });
+
+    $('#burger').click ( () => {
+        $('#menu').show();
+    });
+    $('#menu > *').click ( () => {
+           $('#menu').hide();
     });
 
     (function () {
@@ -101,6 +128,7 @@ $(document).ready(() => {
         });
 
         $('#popup-action > button').click(() => {
+            $('.popup-input').hide();
             let name = $('#name');
             let order = $('#order');
             let phone = $('#phone');

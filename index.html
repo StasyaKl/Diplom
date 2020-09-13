@@ -42,6 +42,38 @@
                 <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
             </svg>
         </div>
+        <div id="menu">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
+            <div class="main-header-item">
+                <a href="#assortment">Ассортимент</a>
+            </div>
+            <div class="main-header-item">
+                <a href="#collect">Как мы собираем чай</a>
+            </div>
+            <div class="main-header-item">
+                <a href="#stock">Наши акции</a>
+            </div>
+            <div class="main-header-item">
+                <a href="#properties">Полезные свойства</a>
+            </div>
+            <div class="main-header-item">
+                <a href="#footer">Контакты</a>
+            </div>
+        </div>
     </div>
     <div id="main-text">
         <h2 class="wow animate__fadeIn">Эксклюзивный чай <br>
@@ -51,9 +83,9 @@
             У нас вы сможете найти чай со всего мира, самых невообразимых вкусов и ароматов
         </div>
         <div class="action">
-            <button class="btn">Выбрать чай
+            <a href="#assortment" class="btn">Выбрать чай
                 <img src="images/mint-btn.png" alt="">
-            </button>
+            </a>
         </div>
     </div>
 </div>
@@ -98,7 +130,7 @@
     <div id="bought-container">
         <h2 class="title">У нас вы найдете</h2>
         <div id="bought-items">
-            <div class="bought-item">
+            <div class="bought-item wow animate__zoomInLeft">
                 <div class="bought-item-image">
                     <div class="circle">
                         <img src="images/bought1.png" alt="">
@@ -114,7 +146,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bought-item">
+            <div class="bought-item wow animate__zoomInRight" data-wow-delay="0.5s">
                 <div class="bought-item-image">
                     <div class="circle">
                         <img src="images/bought2.png" alt="">
@@ -130,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bought-item">
+            <div class="bought-item wow animate__zoomInLeft animate__delay-1s">
                 <div class="bought-item-image order">
                     <div class="circle">
                         <img src="images/bought3.png" alt="">
@@ -145,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bought-item">
+            <div class="bought-item wow animate__zoomInRight" data-wow-delay="1.5s">
                 <div class="bought-item-image order">
                     <div class="circle">
                         <img src="images/bought4.png" alt="">
@@ -173,21 +205,21 @@
         <div class="category" data-id="exclusive-container">Эксклюзивные миксы</div>
         <div class="category" data-id="oolong-container">Улун</div>
     </div>
-    <div id="white-container" class="products-container">
-        <div class="loop owl-carousel">
+    <div id="white-container" class="products-container active">
+        <div class="loop owl-carousel owl-theme">
             <div class="product-container">
                 <div class="product-image">
                     <img src="images/white-tea-1.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Чай со вкусом шампанского</h2>
+                        <h2>Белый пион</h2>
                     </div>
                     <div class="product-content-description">
-                        Черный крупнолистовой чай со вкусом шампанского.
+                        Обладает необычайным ароматом смеси цветов и фруктов и при заваривании дает золотой оттенок.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 490 руб.
+                        100 гр / 400 руб.
                     </div>
                     <div class="product-action">
                         <a class="btn open-popup-link" href="#test-popup">Купить
@@ -202,40 +234,40 @@
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Домашний очаг</h2>
+                        <h2>Серебрянные иглы</h2>
                     </div>
                     <div class="product-content-description">
-                        Смесь улуна, женьшеня и целебных растений. Тонизирующий чай с ярким живым вкусом и долгим
-                        сладковатым послевкусием.
+                        Обладает мягким сладковатым вкусом, настой имеет бледно-желтый цвет.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 410 руб.
+                        100 гр / 650 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/white-tea-3.jpeg">
+                    <img src="images/white-tea-3.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Сладкий апельсин</h2>
+                        <h2>Шоу Мэй</h2>
                     </div>
                     <div class="product-content-description">
-                        Согревающий бленд на основе китайской сенчи и пряной смеси апельсина, корицы и гвоздики.
+                        Производят из почки и верхнего листика, по этой причине
+                        Шоу Мэй имеет более темный оттенок.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 450 руб.
+                        100 гр / 550 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -245,38 +277,38 @@
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Сладкий апельсин</h2>
+                        <h2>Гун Мэй</h2>
                     </div>
                     <div class="product-content-description">
-                        Согревающий бленд на основе китайской сенчи и пряной смеси апельсина, корицы и гвоздики.
+                        У чая невероятно чарующий аромат лестных цветов, диких растений.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 450 руб.
+                        100 гр / 750 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="black-container" class="products-container">
-        <div class="loop owl-carousel">
+        <div class="loop owl-carousel owl-theme">
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/exclusive1.png">
+                    <img src="images/black-tea-1.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Чай со вкусом шампанского</h2>
+                        <h2>Ассам</h2>
                     </div>
                     <div class="product-content-description">
-                        Черный крупнолистовой чай со вкусом шампанского.
+                        Выращивают в особых условиях, которые обеспечивают сладковатый вкус и ярость цвета напитка.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 490 руб.
+                        100 гр / 460 руб.
                     </div>
                     <div class="product-action">
                         <a class="btn open-popup-link" href="#test-popup">Купить
@@ -287,85 +319,126 @@
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/exclusive2.png">
+                    <img src="images/black-tea-2.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Домашний очаг</h2>
+                        <h2>Кимун</h2>
                     </div>
                     <div class="product-content-description">
-                        Смесь улуна, женьшеня и целебных растений. Тонизирующий чай с ярким живым вкусом и долгим
-                        сладковатым послевкусием.
+                        Выделяется своим вкусом с легким сочетанием винных, фруктовых и сосновых ноток.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 410 руб.
+                        100 гр / 330 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/exclusive3.png">
+                    <img src="images/black-tea-3.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Сладкий апельсин</h2>
+                        <h2>Дянь Хун</h2>
                     </div>
                     <div class="product-content-description">
-                        Согревающий бленд на основе китайской сенчи и пряной смеси апельсина, корицы и гвоздики.
+                        Сладковатый легкий аромат личи, розы и лонгана покорил многих поклонников чая.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 450 руб.
+                        100 гр / 800 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/exclusive3.png">
+                    <img src="images/black-tea-4.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Сладкий апельсин</h2>
+                        <h2>Эрл Грей</h2>
                     </div>
                     <div class="product-content-description">
-                        Согревающий бленд на основе китайской сенчи и пряной смеси апельсина, корицы и гвоздики.
+                        Классика английского черного чая с маслом, которое получено из кожицы плода бергамота.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 450 руб.
+                        100 гр / 420 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="images/black-tea-5.jpg">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        <h2>Махараджа</h2>
+                    </div>
+                    <div class="product-content-description">
+                        Напиток темно-бордовой окраски обладает бархатным вкусом с приятным цветочно-медовым ароматом.
+                    </div>
+                    <div class="product-content-property">
+                        100 гр / 250 руб.
+                    </div>
+                    <div class="product-action">
+                        <a class="btn open-popup-link" href="#test-popup">Купить
+                            <img src="images/mint-btn.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="images/black-tea-6.jpg">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        <h2>Лапсан Сяо Чжун</h2>
+                    </div>
+                    <div class="product-content-description">
+                        Поражает своим уникальным привкусом и дивным смолистым ароматом.
+                    </div>
+                    <div class="product-content-property">
+                        100 гр / 430 руб.
+                    </div>
+                    <div class="product-action">
+                        <a class="btn open-popup-link" href="#test-popup">Купить
+                            <img src="images/mint-btn.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="green-container" class="products-container">
-        <div class="loop owl-carousel">
+        <div class="loop owl-carousel owl-theme">
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/white-tea-1.jpg">
+                    <img src="images/green-tea-1.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Чай со вкусом шампанского</h2>
+                        <h2>Колодец Дракона</h2>
                     </div>
                     <div class="product-content-description">
-                        Черный крупнолистовой чай со вкусом шампанского.
+                        Подарит заряд бодрости на весь день, очарует цветочным ароматом и сладковатым вкусом.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 490 руб.
+                        100 гр / 550 руб.
                     </div>
                     <div class="product-action">
                         <a class="btn open-popup-link" href="#test-popup">Купить
@@ -376,72 +449,92 @@
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/white-tea-2.jpg">
+                    <img src="images/green-tea-2.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Домашний очаг</h2>
+                        <h2>Хуан Шань Мао Фэн</h2>
                     </div>
                     <div class="product-content-description">
-                        Смесь улуна, женьшеня и целебных растений. Тонизирующий чай с ярким живым вкусом и долгим
-                        сладковатым послевкусием.
+                        Даст расслабиться и освежит легким приятным вкусом и потрясающим ароматом цветов.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 410 руб.
+                        100 гр / 740 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/white-tea-3.jpeg">
+                    <img src="images/green-tea-3.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Сладкий апельсин</h2>
+                        <h2>Би Ло Чунь</h2>
                     </div>
                     <div class="product-content-description">
-                        Согревающий бленд на основе китайской сенчи и пряной смеси апельсина, корицы и гвоздики.
+                        Покоряет своей изящной нежностью и мягкостью, сладким фруктовым вкусом и цветочным ароматом.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 450 руб.
+                        100 гр / 390 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/white-tea-4.jpg">
+                    <img src="images/green-tea-4.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Сладкий апельсин</h2>
+                        <h2>Тай Пин Хоу Куй</h2>
                     </div>
                     <div class="product-content-description">
-                        Согревающий бленд на основе китайской сенчи и пряной смеси апельсина, корицы и гвоздики.
+                        Опьяняет цветочным ароматом и завораживает мягким вкусом с табачной ноткой.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 450 руб.
+                        100 гр / 800 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="images/green-tea-5.jpg">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        <h2>Мэн Дин Гань Лу</h2>
+                    </div>
+                    <div class="product-content-description">
+                        Поражает нежностью и легким изяществом фруктового вкуса и тонкого приятного аромата.
+                    </div>
+                    <div class="product-content-property">
+                        100 гр / 910 руб.
+                    </div>
+                    <div class="product-action">
+                        <a class="btn open-popup-link" href="#test-popup">Купить
+                            <img src="images/mint-btn.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="exclusive-container" class="products-container">
-        <div class="loop owl-carousel">
+        <div class="loop owl-carousel owl-theme">
             <div class="product-container">
                 <div class="product-image">
                     <img src="images/exclusive1.png">
@@ -479,9 +572,9 @@
                         100 гр / 410 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -500,9 +593,9 @@
                         100 гр / 450 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -521,29 +614,30 @@
                         100 гр / 450 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="oolong-container" class="products-container">
-        <div class="loop owl-carousel">
+        <div class="loop owl-carousel owl-theme">
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/exclusive1.png">
+                    <img src="images/oolong-tea-1.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Чай со вкусом шампанского</h2>
+                        <h2>Тегуаньинь</h2>
                     </div>
                     <div class="product-content-description">
-                        Черный крупнолистовой чай со вкусом шампанского.
+                        Напиток для гурманов и истинных ценителей, предпочитающих радовать себя лишь эксклюзивными
+                        сортами.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 490 руб.
+                        100 гр / 900 руб.
                     </div>
                     <div class="product-action">
                         <a class="btn open-popup-link" href="#test-popup">Купить
@@ -554,65 +648,66 @@
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/exclusive2.png">
+                    <img src="images/oolong-tea-2.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Домашний очаг</h2>
+                        <h2>Молочный улун</h2>
                     </div>
                     <div class="product-content-description">
-                        Смесь улуна, женьшеня и целебных растений. Тонизирующий чай с ярким живым вкусом и долгим
-                        сладковатым послевкусием.
+                        Обладает нежнейшим сливочным ароматом и насыщенным вкусом.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 410 руб.
+                        100 гр / 1130 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/exclusive3.png">
+                    <img src="images/oolong-tea-3.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Сладкий апельсин</h2>
+                        <h2>Женьшень Улун</h2>
                     </div>
                     <div class="product-content-description">
-                        Согревающий бленд на основе китайской сенчи и пряной смеси апельсина, корицы и гвоздики.
+                        Популярный улун с тонким цветочным ароматом и ярким сладковатым вкусом, отличается хорошим
+                        тонизирующим эффектом.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 450 руб.
+                        100 гр / 740 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="product-container">
                 <div class="product-image">
-                    <img src="images/exclusive3.png">
+                    <img src="images/oolong-tea-4.jpg">
                 </div>
                 <div class="product-content">
                     <div class="product-content-title">
-                        <h2>Сладкий апельсин</h2>
+                        <h2>Да Хун Пао</h2>
                     </div>
                     <div class="product-content-description">
-                        Согревающий бленд на основе китайской сенчи и пряной смеси апельсина, корицы и гвоздики.
+                        Да Хун Пао – редкий и очень дорогостоящий улун, избранный самим императором для личных чайных
+                        церемоний.
                     </div>
                     <div class="product-content-property">
-                        100 гр / 450 руб.
+                        100 гр / 1200 руб.
                     </div>
                     <div class="product-action">
-                        <button class="btn">Купить
+                        <a class="btn open-popup-link" href="#test-popup">Купить
                             <img src="images/mint-btn.png" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -904,23 +999,68 @@
         </div>
         <div id="footer-block-hide">
             <div class="footer-block">
-                <div class="footer-title">Пункты самовывоза:</div>
-                <div class="footer-block-hide">
+                <div class="footer-title first">Пункты самовывоза:</div>
+                <div class="footer-block-hide first">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
                     <div class="footer-item">г. Москва, Люберцы, ул. Озерная, 5</div>
                     <div class="footer-item">г. Москва, ТЦ «Метрополь», 2 этаж</div>
                     <div class="footer-item">г. Москва, пр-т Некрасова, 25</div>
                 </div>
             </div>
             <div class="footer-block">
-                <div class="footer-title">Режим работы:</div>
-                <div class="footer-block-hide">
+                <div class="footer-title second">Режим работы:</div>
+                <div class="footer-block-hide second">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
                     <div class="footer-item">Пн-Пт с 10:00 до 20:00</div>
                     <div class="footer-item">Сб-Вс с 10:00 до 18:00</div>
                 </div>
             </div>
             <div class="footer-block">
-                <div class="footer-title">Телефоны:</div>
-                <div class="footer-block-hide">
+                <div class="footer-title third">Телефоны:</div>
+                <div class="footer-block-hide third">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
                     <div class="footer-item">+7 (495) 384-66-76</div>
                     <div class="footer-item">+7 (495) 584-76-86</div>
                 </div>
@@ -937,25 +1077,49 @@
     <div id="popup-content">
         <h2>Оформление</h2>
         <div id="popup-choose">
-            <div class="popup-input">
+            <div class="popup-form">
                 <form action="">
-                    <input type="text" placeholder="Ваш заказ" id="order">
+                    <select required style="color:gray" id="order" onchange="this.style.color='black'">
+                        <option value="" style="display:none">Ваш заказ</option>
+                        <option>Белый пион</option>
+                        <option>Серебрянные иглы</option>
+                        <option>Шоу Мэй</option>
+                        <option>Гун Мэй</option>
+                        <option>Ассам</option>
+                        <option>Кимун</option>
+                        <option>Дянь Хун</option>
+                        <option>Эрл Грей</option>
+                        <option>Махараджа</option>
+                        <option>Лапсан Сяо Чжун</option>
+                        <option>Колодец Дракона</option>
+                        <option>Хуан Шань Мао Фэн</option>
+                        <option>Би Ло Чунь</option>
+                        <option>Тай Пин Хоу Куй</option>
+                        <option>Мэн Дин Гань Лу</option>
+                        <option>Чай со вкусом шампанского</option>
+                        <option>Домашний очаг</option>
+                        <option>Сладкий апельсин</option>
+                        <option>Тегуаньинь</option>
+                        <option>Молочный улун</option>
+                        <option>Женьшень Улун</option>
+                        <option>Да Хун Пао</option>
+                    </select>
                     <div class="popup-input">Введите данные</div>
                 </form>
             </div>
-            <div class="popup-input">
+            <div class="popup-form">
                 <form action="">
                     <input type="text" placeholder="Кол-во грамм" id="amount">
                     <div class="popup-input">Введите данные</div>
                 </form>
             </div>
-            <div class="popup-input">
+            <div class="popup-form">
                 <form action="">
                     <input type="text" placeholder="Ваше имя" id="name">
                     <div class="popup-input">Введите данные</div>
                 </form>
             </div>
-            <div class="popup-input">
+            <div class="popup-form">
                 <form action="">
                     <input type="text" placeholder="Ваш телефон" id="phone">
                     <div class="popup-input">Введите данные</div>
@@ -978,6 +1142,7 @@
 
 
 <script src="js/jquery.min.js"></script>
+<script src="js/parallax.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
