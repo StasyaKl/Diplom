@@ -8,8 +8,21 @@
     #main {
         background-size: 100%;
     }
+}
+
+@media screen and (min-width: 2000px) {
+    .owl-carousel .owl-nav button.owl-next span {
+        left: 66.5%;
+    }
+    .owl-carousel .owl-nav button.owl-prev span {
+        left: 32.5%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
     .product-container {
-        margin: 18px auto;
+        min-width: 550px!important;
+        margin: 45px auto;
     }
 }
 
@@ -197,6 +210,16 @@
 }
 
 /*768-869*/
+@media screen and (max-width: 900px) {
+    .owl-carousel .owl-nav button.owl-prev span {
+        left: 17%!important;
+    }
+    .owl-carousel .owl-nav button.owl-next span {
+        left: 80%;
+    }
+}
+
+/*768-869*/
 @media screen and (max-width: 869px) {
     #main #main-header .main-header-item {
         text-align: center;
@@ -205,6 +228,9 @@
 
 /*768-1023*/
 @media screen and (max-width: 1023px) {
+    #popup-content h2 {
+        margin-left: 140px;
+    }
     .product-container .product-content .product-content-title h2 {
         text-align: center;
         padding-top: 10px;
@@ -212,7 +238,9 @@
     }
     .product-container {
         display: block;
-        height: 415px !important;
+        height: 425px !important;
+        max-width: 370px !important;
+        margin: 40px auto;
     }
     .product-container .product-image {
         max-width: 150px;
@@ -235,11 +263,7 @@
         margin: 0 auto;
     }
     .owl-carousel .owl-nav button.owl-prev span {
-        left: 23.7%;
-    }
-
-    .owl-carousel .owl-nav button.owl-next span {
-        left: 74%;
+        left: 22%;
     }
 
     #main {
@@ -269,7 +293,7 @@
     }
 
     #main .btn img {
-        right: -116px;
+        right: -137px;
         top: -64px;
     }
 
@@ -336,14 +360,17 @@
     }
 
     iframe {
-        width: 534px;
-        height: 324px;
-        margin-bottom: 40px;
+        width: 450px;
+        height: 290px;
+    }
+
+    .video-overlay {
+        background-size: 100%;
     }
 
     #collect-container #collect-mint {
-        top: -104px;
-        left: 410px;
+        top: -107px;
+        left: 395px;
     }
 
     #collect-container #collect-flower {
@@ -358,6 +385,7 @@
     #collect-container #collect-text {
         margin-left: 0;
         text-align: justify;
+        margin-top: 30px;
     }
 
     #collect-container #collect-text .collect-text {
@@ -381,10 +409,44 @@
         margin-right: 18px;
         width: 25px;
     }
+    #footer-block-container .footer-block {
+        margin-right: 15px;
+    }
 }
 
 /*580-767*/
 @media screen and (max-width: 767px) {
+    #popup-content h2 {
+    }
+    .gray {
+        margin-top: 17px;
+    }
+    #footer-container {
+        display: block;
+        padding-top: 86px;
+    }
+    #footer-container .logo {
+        display: flex;
+        justify-content: center;
+    }
+    #footer-icon-hide {
+        justify-content: center;
+        margin-left: 30px;
+    }
+    #footer-block-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #footer-block-container .footer-block {
+        margin-right: 30px;
+    }
+    #footer-block-container .footer-block:last-child {
+        margin-right: 0;
+    }
+    .product-container {
+        max-width: 268px !important;
+    }
     #assortment .category-container {
         display: block;
     }
@@ -398,6 +460,7 @@
 
     #main #main-header #burger {
         display: block;
+        fill: rgb(128, 165, 6);
     }
 
     #main #main-header #menu {
@@ -410,16 +473,18 @@
         justify-content: flex-start;
         margin: 0;
         padding-top: 75px;
-        background: rgba(0, 0, 0, 0.93);
         top: 0;
         z-index: 100;
         right: 0;
-    }
+        background-color: rgb(41, 61, 41);
+        opacity: 0.8;
+}
 
     #menu svg {
         display: block;
         width: 30px;
         fill: rgb(128, 165, 6);
+        opacity: 1;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -434,6 +499,10 @@
 
     #main #main-header #menu .main-header-item {
         display: block;
+    }
+
+    #main #main-header .main-header-item:nth-child(4) {
+        margin-left: 10px;
     }
 
     svg {
@@ -498,6 +567,10 @@
         max-width: 330px;
     }
 
+    #bought-items .bought-item:nth-child(2n) {
+        margin-left: 0;
+    }
+
     #stock-container {
         position: relative;
     }
@@ -541,10 +614,6 @@
         font-size: 13px;
     }
 
-    #footer-container .footer-item {
-        font-size: 10px;
-    }
-
     #footer-container .footer-svg svg {
         width: 26px;
         height: 28px;
@@ -562,20 +631,6 @@
     #properties-container #properties-main #properties-image img {
         margin: 37px 20px;
     }
-
-    .properties-main-hide-point {
-        font-size: 10px;
-    }
-
-    #properties-main-hide {
-        max-width: 304px;
-    }
-
-    .gray {
-        font-size: 8px;
-        margin-top: 30px;
-    }
-
     #footer-container .logo {
         position: relative;
     }
@@ -595,18 +650,11 @@
     #features {
         padding: 62px 0 33px 0;
     }
-    .product-container {
-        margin: 0 auto;
-        max-width: 300px !important;
-    }
-    .owl-carousel.owl-drag .owl-item.center {
-        margin: 20px 0;
-    }
     .owl-carousel .owl-nav button.owl-prev span {
-        left: 15.7%;
+        left: 7.7%!important;
     }
     .owl-carousel .owl-nav button.owl-next span {
-        left: 80%;
+        left: 89%;
     }
     #main #main-header #menu {
         width: 100%;
@@ -616,10 +664,6 @@
     }
     .properties-title {
         margin-bottom: 30px;
-    }
-
-    .properties-main-hide-point {
-        font-size: 12px;
     }
 
     #properties-container #properties-main {
@@ -643,13 +687,12 @@
     }
 
     iframe {
-        width: 436px;
-        height: 249px;
+        width: 400px;
+        height: 231px;
     }
 
     #collect-container #collect-text .collect-text {
-        font-size: 11px;
-        text-align: center;
+        width: 400px;
     }
 
     #collect-container #collect-mint {
@@ -661,11 +704,6 @@
         width: 65px;
     }
 
-    #collect-container #collect-text .collect-text {
-        font-size: 11px;
-        width: 400px;
-    }
-
     #collect-container #collect-flower {
         bottom: -226px;
         left: 298px;
@@ -673,10 +711,6 @@
 
     #collect-container #collect-flower img {
         width: 108px;
-    }
-
-    #footer-container .logo img {
-        width: 100%;
     }
 
     #footer-container .footer-svg {
@@ -688,17 +722,8 @@
         height: 28px;
     }
 
-    #footer-container .footer-item {
-        font-size: 9px;
-        width: 108px;
-    }
-
     #footer-container .footer-title {
         font-size: 11px;
-    }
-
-    #footer-container {
-        padding: 115px 10px 0 20px;
     }
 
     #collect {
@@ -709,16 +734,12 @@
         bottom: -158px;
     }
 
-    #footer-container .logo {
-        width: 100px;
-    }
-
     .footer-block {
         text-align: left;
     }
 
-    #footer-container .footer-block:last-child {
-        width: 75px;
+    #footer-container .footer-item {
+        font-size: 10px;
     }
 
     .gray:first-child {
@@ -728,6 +749,51 @@
 
 /*320-479*/
 @media screen and (max-width: 479px) {
+    form .popup-input {
+        margin-top: -12px;
+    }
+    #popup-content #popup-action .btn {
+        margin-left: 0;
+        width: 202px;
+        padding: 15px 29px;
+        height: 50px;
+        font-size: 17px;
+        margin-top: 5px;
+    }
+    #popup-content h2 {
+        margin-left: 0;
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    #popup-content input, #popup-choose select {
+        margin-bottom: 10px;
+    }
+    #answer {
+        font-size: 17px;
+    }
+    #stock-container #stock-description #stock-text {
+        width: 268px;
+    }
+    .properties-main-hide-point, #collect-container #collect-text .collect-text {
+        font-size: 14px;
+    }
+    .product-container .product-content .product-action .btn {
+        width: 165px;
+        padding: 14px 55px;
+    }
+    .product-container .product-content .product-content-description {
+        width: 144px;
+    }
+    .product-container .product-content .product-action .btn img {
+        display: none;
+    }
+    .product-container {
+        max-width: 200px !important;
+    }
+    #bought-items .bought-item .bought-item-main, #bought-items .bought-item:nth-child(3) .bought-item-main, #bought-items .bought-item:nth-child(4) .bought-item-main {
+        padding: 0;
+    }
     #stock-container {
         height: 370px;
     }
@@ -743,9 +809,6 @@
     #collect-video {
         width: 300px;
         margin-bottom: 15px;
-    }
-    iframe {
-        width: 262px;
     }
     #properties-main-hide {
         max-width: 250px;
@@ -772,13 +835,10 @@
         display: none;
     }
     .owl-carousel .owl-nav button.owl-prev span {
-        left: 5.7%;
+        left: 5.7%!important;
     }
     .owl-carousel .owl-nav button.owl-next span {
         left: 88%;
-    }
-    .product-container {
-        max-width: 245px !important;
     }
     #main {
         height: 480px;
@@ -884,7 +944,7 @@
     }
 
     #stock-container #stock-description #stock-text {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     #stock-container #stock-description #stock-text span {
@@ -899,7 +959,7 @@
     }
 
     #stock-container #stock-description .action .btn {
-        margin-left: 0;
+        margin-left: 11px;
         font-size: 13px;
         width: 240px;
         height: 42px;
@@ -974,14 +1034,6 @@
         font-size: 10px;
     }
 
-    #footer-container .footer-item {
-        font-size: 8px;
-    }
-
-    .footer-block-hide, #footer #footer-container .footer-block {
-        display: none;
-    }
-
     #footer #footer-container #footer-block-hide, #footer #footer-container #footer-block-hide .footer-block {
         display: block;
     }
@@ -1018,12 +1070,11 @@
     }
 
     #answer {
-        font-size: 20px;
         margin: 30px auto 0px auto;
     }
 
     #stock-container {
-        height: 366px;
+        height: 380px;
     }
 
     #main .btn {
@@ -1047,5 +1098,22 @@
     #collect .properties-title {
         margin-top: 100px;
         margin-bottom: 30px;
+    }
+    #footer-container {
+        padding-top: 80px;
+    }
+    #footer-block-container {
+        margin-top: 12px;
+    }
+    #footer-block-container .footer-block {
+        margin-right: 12px;
+    }
+    #footer-container .footer-item {
+        font-size: 9px;
+        margin-top: 13px;
+    }
+    .gray {
+        margin-top: 19px;
+        font-size: 7px;
     }
 }

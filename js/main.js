@@ -37,12 +37,11 @@ $(document).ready(() => {
             0:{
                 items:1
             },
-            580:{
+            900:{
                 items: 2
             },
-            1023:{
+            2000:{
                 items: 3
-
             }
         }
     });
@@ -68,24 +67,13 @@ $(document).ready(() => {
         this.style.display = "none";
     }
 
-    $(".footer-title.first").click(() => {
-        $(".footer-block-hide.first").show();
-    });
-    $(".footer-title.second").click(() => {
-        $(".footer-block-hide.second").show();
-    });
-    $(".footer-title.third").click(() => {
-        $(".footer-block-hide.third").show();
-    });
-    $('.footer-block-hide > svg').click ( () => {
-        $('#footer-block-hide .footer-block-hide').hide();
-    });
-
     $('#burger').click ( () => {
         $('#menu').show();
+        $('#burger').hide();
     });
     $('#menu > *').click ( () => {
-           $('#menu').hide();
+        $('#menu').hide();
+        $('#burger').show();
     });
 
     (function () {
@@ -138,7 +126,7 @@ $(document).ready(() => {
                 $.ajax({
                     type: 'post',
                     url: 'mail.php',
-                    data: 'name=' + name.val() + '&order' + order.val() + '&phone' + phone.val() + '&amount' + amount.val(),
+                    data: 'name=' + name.val() + '&order=' + order.val() + '&phone=' + phone.val() + '&amount=' + amount.val(),
                     success: () => {
                         $('#popup-content').hide();
                         $('#popup-content-second').show();
